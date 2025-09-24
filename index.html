@@ -28,13 +28,15 @@
             margin: 0 auto;
             width: 100%;
         }
+        header {
+            background-color: rgb(33, 3, 64);
+        }
         nav{
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 97px;
-            background-color: rgb(33, 3, 64);
-            padding: 0 40px;
+            padding:40px 40px;
             width: 100%;
         }
         nav ul{
@@ -50,19 +52,16 @@
         }
         .firstSection{
             display: flex;
-            justify-content: space around;
-            margin: 23px 0;
+            justify-content: space-between;
+            gap: 40px;
+            margin: 23px 30px;
         }
         .firstSection div{
-            width: 50%;
+            width: 30%;
         }   
 
         .leftSection{
-            background-color: red;
-        }
-
-        .rightSection{
-            background-color: red;
+            background-color: rgb(182, 0, 202);
         }
     </style>
 </head>
@@ -87,10 +86,10 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-               left
+                Hi,My name is Anushka Maity. I am a Web Developer.
             </div>
-            <div class="rightSection">
-                right
+            <div class="rightSection" style="display: flex; justify-content: center; align-items: center;">
+                <img src="./bg.jpeg" alt="">
         </section>
     </main>
 </body>
