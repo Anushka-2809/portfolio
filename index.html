@@ -23,12 +23,19 @@
         .bold, strong, b {
             font-weight: 700;
         }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
         nav{
-            display:flex;
-            justify-content:space-around ;
-            align-items:center ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             height: 97px;
             background-color: rgb(33, 3, 64);
+            padding: 0 40px;
+            width: 100%;
         }
         nav ul{
             display: flex;
@@ -47,30 +54,35 @@
             margin: 23px 0;
         }
         .firstSection div{
-            width: 30%;
-            
+            width: 50%;
+        }   
+
         .leftSection{
             background-color: red;
         }
+
         .rightSection{
             background-color: red;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="left">Anushka's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
-                </ul>
-            </div>
-        </nav>
+        <div class="nav-container">
+            <nav>
+                <div class="left">Anushka's Portfolio</div>
+                <div class="right">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Projects</li>
+                        <li>Contact Me</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="firstSection">
