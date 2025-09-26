@@ -27,21 +27,22 @@
             max-width: 1200px;
             margin: 0 auto;
             width: 100%;
+            padding-left: 0;
         }
         header {
             background-color: rgb(33, 3, 64);
         }
-        nav{
-            display: flex;
+        nav
+           { display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 97px;
-            padding:40px 40px;
-            width: 100%;
-        }
+            padding: 20px 0;
         nav ul{
             display: flex;
+            flex-direction: row;
             justify-content: center;
+            align-items: center;
+            gap: 0;
         }
         nav ul li{
             list-style: none;
@@ -59,14 +60,14 @@
         .left{
             font-size: 2rem;
         }
-       .firstSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-    margin: 60px 0 0 0;
-    padding: 0 60px;
-}
+        .firstSection{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+            margin: 60px 0 0 0;
+            padding: 0;
+        }
 .leftSection {
     flex: 1;
     display: flex;
@@ -86,17 +87,15 @@
 }
         .intro-text {
             font-size: 2.8rem;
-            margin-left: 40px;
-    font-weight: 400;
-    color: #fff;
-    text-align: left;
-    line-height: 1.2;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 8px 8px 8px 0;
-    width: 100%;
-    box-sizing: border-box;
-}
+            font-weight: 400;
+            color: #fff;
+            text-align: left;
+            line-height: 1.2;
+            margin: 0;
+            padding: 8px 8px 8px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
 .past-experiences {
     font-weight: 300;
     font-size: 2rem;
@@ -104,7 +103,7 @@
 
         .leftSection{
             font-size: 2rem;
-            margin: 30px 0;
+            margin: 30px 90px;
             text-align: center;
         }
         .rightSection{
