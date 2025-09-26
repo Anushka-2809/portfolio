@@ -59,46 +59,47 @@
         .left{
             font-size: 2rem;
         }
-        .firstSection{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 60px;
-            margin: 60px 0 0 0;
-            padding: 0 40px;
-        }
-        .leftSection {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            min-width: 350px;
-            max-width: 600px;
-            padding: 32px 0;
-        }
-        .rightSection {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+       .firstSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin: 60px 0 0 0;
+    padding: 0 60px;
+}
+.leftSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 350px;
+    max-width: 600px;
+    padding: 32px 0 32px 24px;
+}
+.rightSection {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 300px;
+}
         .intro-text {
-            font-size: 2.5rem;
-            font-weight: 400;
-            color: #fff;
-            text-align: left;
-            line-height: 1.2;
-            margin-left: 20px;
-            margin-right: 0;
-            padding: 8px 8px 8px 32px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        .past-experiences {
-            font-weight: 300;
-            font-size: 1.1rem;
-        }
+            font-size: 2.8rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    line-height: 1.2;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 8px 8px 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.past-experiences {
+    font-weight: 300;
+    font-size: 2rem;
+}
 
         .leftSection{
             font-size: 2rem;
@@ -139,18 +140,20 @@
         </div>
     </header>
     <main>
-        <section class="firstSection">
-                                    <div class="leftSection">
-                                            <div class="intro-text past-experiences" style="padding-bottom: 0;">
-                                                Hi, I'm <span class="purple">Anushka</span>. 
-            </div>
-
-            <div class="rightSection" style="display: flex; justify-content: center; align-items: center;">
-                <img src="./bg-removebg-preview.png" alt="">
-        </section>
+      <section class="firstSection">
+    <div class="leftSection">
+        <div class="intro-text past-experiences">
+            Hi, I'm <span class="purple">Anushka</span>.<br>
+            I'm a <span id="element" class="purple"></span>
+        </div>
+    </div>
+    <div class="rightSection">
+        <img src="bg-removebg-preview.png" alt="Developer illustration" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    </div>
+</section>
 
         <section class="secondSection">
-            <h1>Pasr Experience</h1>
+            <h1>Past Experience</h1>
         </section>
     </main>
 
@@ -158,11 +161,12 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
         <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', ' UI/UX Designer', 'Video Editor'],
-            typeSpeed: 100,
-
-        });
+       var typed = new Typed('#element', {
+    strings: ['Web Developer', 'UI/UX Designer', 'Video Editor'],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true
+});
         </script>
 </body>
 
