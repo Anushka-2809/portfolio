@@ -43,13 +43,21 @@
             background-color: rgb(33, 3, 64);
             min-height: 120px;
         }
-        nav ul{
+        nav {
             display: flex;
             justify-content: flex-end;
+            align-items: center;
+            height: 97px;
+            padding: 40px 0 40px 0;
+            width: 100%;
         }
-        nav ul li{
-            list-style: none;
-            margin: 0 23px;
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 0px;
+        }
+        .left {
+            font-size: 2rem;
         }
         nav ul li {
             display: inline-flex;
@@ -81,7 +89,7 @@
             padding-left: 60px;
             padding-right: 0;
         }
-    .leftSection {
+        .leftSection {
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -90,7 +98,7 @@
         padding: 0;
         margin: 0;
     }
-.rightSection {
+        .rightSection {
     flex: 1;
     display: flex;
     justify-content: flex-end;
