@@ -35,7 +35,7 @@
 
 
 .logo {
-    margin-left: 50px; /* tweak until aligned */
+    margin-left: 50px; 
 }
 
 
@@ -82,7 +82,12 @@
          nav ul li a:hover{
             color: rgb(200, 92, 226);
          }
-
+        main hr {
+            border: 1px solid rgb(119, 191, 246);
+            margin: 40px 80px;
+            width: 80%;
+            height: 1.2px;
+        }
         .left{
             font-size: 2rem;
         }
@@ -103,14 +108,15 @@
         align-items: flex-start;
         padding: 0;
         margin: 0;
-    }
+    
+       }
         .rightSection {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     min-width: 300px;
-    padding-right: 40px;
+    padding-right: 40px; 
 }
         .intro-text {
             font-size: 2rem;
@@ -140,7 +146,7 @@
         }
         .rightSection{
             width: 80%;
-        }
+        } 
         .purple{
             color:rgb(172, 94, 245);
         }
@@ -148,19 +154,9 @@
             color: rgb(172, 94, 245);
         }
     
-        .secondSection, .projectsSection {
-            max-width: 80vw;
-            margin: auto;
-        }
-        .projectsSection {
-            margin-top: 80px;
-        }
         .secondSection, .projectsSection, .servicesSection {
             max-width: 80vw;
-            margin: auto;
-        }
-        .servicesSection {
-            margin-top: 80px;
+            margin: 80px auto 0 auto;
         }
         
         </style>
@@ -197,28 +193,25 @@
         <img src="bg-removebg-preview.png" alt="Developer illustration" style="max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;">
     </div>
 </section>
-
+<hr>
         <section class="secondSection">
             <h1>Work Experience</h1>
         </section>
+<hr>        
         <section class="projectsSection">
             <h1>Projects</h1>
         </section>
+<hr>        
         <section class="ServicesSection">
             <h1>Services</h1>
         </section>
-
-
-
-    </main>
-
-
+</main>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
         <script>
-       var typed = new Typed('#element', {
-    strings: ['Web Developer', 'UI/UX Designer', 'Video Editor'],
-    typeSpeed: 50,
+        var typed = new Typed('#element', {
+strings: ['Web Developer', 'UI/UX Designer', 'Video Editor'],
+typeSpeed: 50,
 });
         </script>
 </body>
