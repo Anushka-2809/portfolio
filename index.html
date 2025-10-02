@@ -179,12 +179,34 @@
             margin: 56px 0;
             display: flex;
         }
-        .secondSection .vertical{
-            background: white;
-            width: 21px;
-            height: 93px;
-            margin: 0 100px;
-        }
+       .secondSection .vertical-line-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.secondSection .vertical {
+    background: white;
+    width: 4px;
+    height: 180px;
+    margin: 0 30px;
+}
+.secondSection .horizontal-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+}
+.secondSection .horizontal {
+    background: white;
+    height: 2px;
+    width: 80px;
+    margin: 0 0 30px 0;
+}
+.secondSection .horizontal:last-child {
+    margin-bottom: 0;
+}
         </style>
 </head>
 
@@ -220,16 +242,19 @@
     </div>
 </section>
 <hr>
-        <section class="secondSection">
-            <span class="text-gray">What I ahve done so far</span>
-            <h1>Work Experience</h1>
-
-            <div class="box"></div>
-                <div class="vertical"></div>              
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-        </section>
+       <section class="secondSection">
+    <span class="text-gray">What I ahve done so far</span>
+    <h1>Work Experience</h1>
+    <div class="vertical-line-container">
+        <div class="vertical"></div>
+        <div class="horizontal-group">
+            <div class="horizontal"></div>
+            <div class="horizontal"></div>
+            <div class="horizontal"></div>
+            <div class="horizontal"></div>
+        </div>
+    </div>
+</section>
 
 </main>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
