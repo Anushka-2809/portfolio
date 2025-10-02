@@ -204,6 +204,33 @@
 .secondSection .horizontal:last-child {
     margin-bottom: 0;
 }
+        .attached-horizontal {
+            border: none;
+            height: 2px;
+            width: 100%;
+            background: white;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .vertical-group {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            z-index: 2;
+        }
+        .vertical-line {
+            position: absolute;
+            width: 2px;
+            height: 40px;
+            background: white;
+            top: 0;
+            transform: translateX(-50%);
+        }
         </style>
 </head>
 
@@ -242,17 +269,23 @@
 <section class="secondSection">
     <span class="text-gray">What I have done so far</span>
     <h1>Work Experience</h1>
-    <hr>
+    <hr style="margin: 8px auto 0 auto; width: 62vw; border: none; height: 1.5px; background: white;">
+    
+    </div>
+       
+        
+
+           
 </section>
 
 </section>
 <div class="horizontal-with-verticals">
-    <hr class="attached-horizontal">
-    <div class="vertical-group">
-        <div class="vertical-line" style="left: 15%;"></div>
-        <div class="vertical-line" style="left: 35%;"></div>
-        <div class="vertical-line" style="left: 65%;"></div>
-        <div class="vertical-line" style="left: 85%;"></div>
+    <hr class="attached-horizontal" style="display: none;">
+    <div class="vertical-group" style="display: none;">
+        <div class="vertical-line" style="left: 15%; display: none;"></div>
+        <div class="vertical-line" style="left: 35%; display: none;"></div>
+        <div class="vertical-line" style="left: 65%; display: none;"></div>
+        <div class="vertical-line" style="left: 85%; display: none;"></div>
     </div>
 </div>
 
