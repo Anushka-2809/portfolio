@@ -8,288 +8,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anushka - Developer Portfolio</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
+        * { margin: 0; padding: 0; }
         body {
             background-color: rgb(19, 0, 38);
-            color: rgb(119, 191, 246);
+            color: rgb(255,255,255);
             font-family: 'Poppins', Arial, Helvetica, sans-serif;
             font-weight: 400;
         }
-        
-        .bold, strong, b {
-            font-weight: 700;
-        }
-      .nav-container {
-    max-width: 1200px;
-    margin: 20px auto 0 auto;  
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 100px;
-}
-
-
-.logo {
-    margin-left: 50px; 
-}
-
-
         header {
             background-color: rgb(33, 3, 64);
-            min-height: 120px;
+            min-height: 80px;
+            width: 100%;
         }
         nav {
             display: flex;
-            justify-content: Space Between;
+            justify-content: space-between;
             align-items: center;
-            height: 97px;
-            gap: 140px;
-            padding: 40px 60px 40px 0;
-            width: 100%;
+            padding: 0 60px;
+            height: 80px;
         }
-        .right {
-            display: flex;
-            align-items: center;
-        }
-        .left {
-            font-size: 2rem;
-            text-align: center;
+        .nav-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 0.5px;
         }
         nav ul {
             display: flex;
-            justify-content: flex-end;
-            width: 100%;
-        }
-        nav ul li {
-            display: inline-flex;
-            align-items: center;
-            margin: 0 23px;
-        }
-        nav ul li{
+            gap: 36px;
             list-style: none;
-            margin: 0 23px;
         }
-
-         nav ul li a{
-           text-decoration: none;
-            color:  rgb(119, 191, 246);
-         }
-         nav ul li a:hover{
-            color: rgb(200, 92, 226);
-         }
-        main hr {
-            border: 1px solid rgb(119, 191, 246);
-            margin: 40px 80px;
-            width: 80%;
-            height: 1.2px;
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.05rem;
+            font-weight: 500;
+            transition: color 0.2s;
         }
-
-        .left{
-            font-size: 2rem;
+        nav ul li a:hover {
+            color: rgb(172, 94, 245);
         }
         .firstSection {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 40px;
-            margin: 130px 0;
-            padding-left: 60px;
-            padding-right: 0;
+            margin: 80px 0 0 0;
+            padding: 0 60px;
         }
         .leftSection {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 0;
-        margin: 0;
-    
-       }
-        .rightSection {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    min-width: 300px;
-    padding-right: 40px; 
-}
-        .intro-text {
-            font-size: 2rem;
-            font-weight: 500;
-            color: rgb(119, 191, 246);
-            text-align: left;
-            line-height: 1.2;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            box-sizing: border-box;
-        }
-.purple {
-    color: rgb(172, 94, 245);
-    font-weight: 600;
-}
-.past-experiences {
-    font-weight: 300;
-    font-size: 2rem;
-    color: rgb(172, 94, 245);
-}
-
-        .leftSection{
-            font-size: 2rem;
-            margin: 30px 90px;
-            text-align: center;
-        }
-        .rightSection{
-            width: 80%;
-        } 
-        .purple{
-            color:rgb(172, 94, 245);
-        }
-        .text-gray{
-            color: gray;
-        }
-        #element{
-            color: rgb(172, 94, 245);
-        }
-    
-        .secondSection, .projectsSection {
-            max-width: 80vw;
-            margin: 80px auto 0 auto;
-            height: 80vh;
-        }
-
-        .secondSection .box{
-            background-color: white;
-            width:1px;
-            height: 93px;
-        }
-        .secondSection .box{
-            background-color: white;
-            width:80vw;
-            height: 2px;
-            margin: 56px 0;
+            flex: 1;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
         }
-       .secondSection .vertical-line-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-}
-.secondSection .vertical {
-    background: white;
-    width: 4px;
-    height: 180px;
-    margin: 0 30px;
-}
-.secondSection .horizontal-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 180px;
-}
-.secondSection .horizontal {
-    background: white;
-    height: 2px;
-    width: 80px;
-    margin: 0 0 30px 0;
-}
-.secondSection .horizontal:last-child {
-    margin-bottom: 0;
-}
+        .intro-text {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.18;
+            margin-bottom: 30px;
+        }
+        .intro-text .purple {
+            color: rgb(172, 94, 245);
+            font-weight: 700;
+        }
+        .intro-buttons {
+            display: flex;
+            gap: 18px;
+        }
+        .intro-buttons a {
+            padding: 12px 28px;
+            border: 2px solid rgb(172, 94, 245);
+            border-radius: 8px;
+            background: transparent;
+            color: rgb(172, 94, 245);
+            font-size: 1.08rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .intro-buttons a:hover {
+            background: rgb(172, 94, 245);
+            color: #fff;
+        }
+        .rightSection {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .rightSection img {
+            max-width: 420px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 
-.image-top{
-    width:23px;
-    position: relative;
-    top: -32px;
-    left: -9px;
-}
-
-.vertical-title{
-position:relative;
-top: 75px;
-width:150px;
-
-}
-
-.vertical{
-
-}
         </style>
 </head>
 
 <body>
     <header>
         <nav>
-        <div class="left">Anushka's Portfolio </div>
-        <div class="right">
-        <ul>
-        
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/">Services</a></li>
-                        <li><a href="/">Projects</a></li>
-                        <li><a href="/">Contact Me</a></li>
-            
-                    </ul>
-                </div>
-           </nav>
+            <div class="nav-title">Anushka's Portfolio</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
     </header>
+    <div style="max-width: 90vw; margin: 40px auto 0 auto;">
+        <span style="color: gray; font-size: 1.1rem;">What I have done so far</span>
+        <h1 style="margin-top: 8px; font-size: 2.2rem; color: #fff;">Work Experience</h1>
+    </div>
 </body>
     <main>
       <section class="firstSection">
     <div class="leftSection">
         <div class="intro-text">
             Hi, My name is <span class="purple">Anushka</span><br>
-            and I am a passionate<br>
-            <span id="element" class="purple"></span>
+            and I am a passionate <span class="purple">Web Designer</span>
+        </div>
+        <div class="intro-buttons">
+            <a href="#" download>Download Resume</a>
+            <a href="https://github.com/Anushka-2809" target="_blank">Visit Github</a>
         </div>
     </div>
     <div class="rightSection">
-        <img src="bg-removebg-preview.png" alt="Developer illustration" style="max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;">
+        <img src="bg-removebg-preview.png" alt="Developer illustration">
     </div>
 </section>
 <hr>
 <section class="secondSection">
-    <span class="text-gray">What I have done so far</span>
-    <h1>Work Experience</h1>
-    <div class="box">
-        <div class="vertical">
-            <img class="image-top" src="developer.png" alt="">
-            <div class="vertical-title">
-                  Node.js Developer (2024-2025)
+    <!-- Section heading moved above main content for sequence -->
+            <div style="position: relative; width: 60vw; margin: 40px auto 0 auto; height: 180px;">
+                <!-- Horizontal timeline -->
+                <div style="position: absolute; top: 60px; left: 0; width: 100%; height: 3px; background: white;"></div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; height: 100%; position: relative; z-index: 1;">
+                    <!-- Timeline item 1 -->
+                    <div style="display: flex; flex-direction: column; align-items: center; width: 20%;">
+                          <img src="HTML.png" alt="icon" style="width: 40px; height: 40px; background: #fff; border-radius: 50%; margin-bottom: 0; z-index:2;">
+                        <div style="width: 3px; height: 60px; background: white; margin-bottom: 0;"></div>
+                        <div style="background: none; color: #fff; text-align: center; margin-top: 16px;">
+                            <div style="font-weight: bold; font-size: 1.1rem;">HTML Developer<br><span style='font-weight:400;'>(2010–2012)</span></div>
+                            <div style="font-size: 0.95rem; margin-top: 8px; color: #bbb;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero earum odio ullam, enim facilis possimus accusamus odit dolores mollitia odio quasi. Facilis, incidunt?</div>
+                        </div>
+                    </div>
+                    <!-- Timeline item 2 -->
+                    <div style="display: flex; flex-direction: column; align-items: center; width: 20%;">
+                          <img src="Figma.png" alt="icon" style="width: 40px; height: 40px; background: #fff; border-radius: 50%; margin-bottom: 0; z-index:2;">
+                        <div style="width: 3px; height: 60px; background: white; margin-bottom: 0;"></div>
+                        <div style="background: none; color: #fff; text-align: center; margin-top: 16px;">
+                            <div style="font-weight: bold; font-size: 1.1rem;">Node.js Developer<br><span style='font-weight:400;'>(2012–2014)</span></div>
+                            <div style="font-size: 0.95rem; margin-top: 8px; color: #bbb;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero earum odio ullam, enim facilis possimus accusamus odit dolores mollitia odio quasi. Facilis, incidunt?</div>
+                        </div>
+                    </div>
+                   
+                    </div>
+                </div>
             </div>
-            <div class="verical-desc">
-                Done 4 projects 
-            </div>
-        </div>
-        <div class="vertical">
-            Node.js Developer (2024-2025)
-        </div>
-    </div>
-        <div style="position: relative; width: 62vw; margin: 20px auto 40px auto; height: 70px;">
-            <hr style="margin: 0; width: 100%; border: none; height: 2px; background: white;">
-            <!-- 4 vertical lines equally spaced -->
-            <div style="position: absolute; left: 0%; top: 0; width: 3px; height: 50px; background: white;"></div>
-            <div style="position: absolute; left: 33.33%; top: 0; width: 3px; height: 50px; background: white;"></div>
-            <div style="position: absolute; left: 66.66%; top: 0; width: 3px; height: 50px; background: white;"></div>
-            <div style="position: absolute; left: 100%; top: 0; width: 3px; height: 50px; background: white; transform: translateX(-100%);"></div>
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 62vw; margin: 0 auto;">
-            <img src="image.png" alt="Work Experience" style="max-width: 80px; max-height: 80px; display: block;">
-            <div style="flex: 1; margin-left: 40px; color: rgb(119, 191, 246);">
-                <!-- Place your work experience text here -->
-                <div>Node.js Developer<br>(2024-2025)</div>
-                <div style="margin-top: 24px;">Done<br>Node.js Developer<br>(2024-2025)</div>
-            </div>
-        </div>
 </section>
 
 </section>
