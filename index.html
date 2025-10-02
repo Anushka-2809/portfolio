@@ -204,6 +204,24 @@
 .secondSection .horizontal:last-child {
     margin-bottom: 0;
 }
+
+.image-top{
+    width:23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title{
+position:relative;
+top: 75px;
+width:150px;
+
+}
+
+.vertical{
+
+}
         </style>
 </head>
 
@@ -242,13 +260,35 @@
 <section class="secondSection">
     <span class="text-gray">What I have done so far</span>
     <h1>Work Experience</h1>
-        <div style="position: relative; width: 62vw; margin: 20px auto 20px auto; height: 70px;">
-            <hr style="margin: 0; width: 100%; border: none; height: 1.5px; background: white;">
+    <div class="box">
+        <div class="vertical">
+            <img class="image-top" src="developer.png" alt="">
+            <div class="vertical-title">
+                  Node.js Developer (2024-2025)
+            </div>
+            <div class="verical-desc">
+                Done 4 projects 
+            </div>
+        </div>
+        <div class="vertical">
+            Node.js Developer (2024-2025)
+        </div>
+    </div>
+        <div style="position: relative; width: 62vw; margin: 20px auto 40px auto; height: 70px;">
+            <hr style="margin: 0; width: 100%; border: none; height: 2px; background: white;">
             <!-- 4 vertical lines equally spaced -->
-            <div style="position: absolute; left: 0%; top: 0; width: 4px; height: 50px; background: white;"></div>
-            <div style="position: absolute; left: 33.33%; top: 0; width: 4px; height: 50px; background: white;"></div>
-            <div style="position: absolute; left: 66.66%; top: 0; width: 4px; height: 50px; background: white;"></div>
-            <div style="position: absolute; left: 100%; top: 0; width: 4px; height: 50px; background: white; transform: translateX(-100%);"></div>
+            <div style="position: absolute; left: 0%; top: 0; width: 3px; height: 50px; background: white;"></div>
+            <div style="position: absolute; left: 33.33%; top: 0; width: 3px; height: 50px; background: white;"></div>
+            <div style="position: absolute; left: 66.66%; top: 0; width: 3px; height: 50px; background: white;"></div>
+            <div style="position: absolute; left: 100%; top: 0; width: 3px; height: 50px; background: white; transform: translateX(-100%);"></div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 62vw; margin: 0 auto;">
+            <img src="image.png" alt="Work Experience" style="max-width: 80px; max-height: 80px; display: block;">
+            <div style="flex: 1; margin-left: 40px; color: rgb(119, 191, 246);">
+                <!-- Place your work experience text here -->
+                <div>Node.js Developer<br>(2024-2025)</div>
+                <div style="margin-top: 24px;">Done<br>Node.js Developer<br>(2024-2025)</div>
+            </div>
         </div>
 </section>
 
