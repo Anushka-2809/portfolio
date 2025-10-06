@@ -201,9 +201,10 @@
                                                                                                                 <!-- Horizontal line above headings -->
                                                                                           <div style="text-align: left; margin-bottom: 40px;">
                                                                                            <span style="color: gray; font-size: 1.1rem; display: block;">What I've done so far</span>
-                                                    <span style="display: inline-block; margin-top: 12px; font-size: 2.2rem; color: #fff; font-weight: 700; background: linear-gradient(90deg, #a25ffb 0%, #fff 100%); border-radius: 32px; padding: 10px 38px; box-shadow: 0 2px 16px 0 #a25ffb33; border: 2px solid #a25ffb; transition: box-shadow 0.2s; cursor: pointer;">Work Experience</span>
+                                                    <span id="workExpBtn" style="display: inline-block; margin-top: 12px; font-size: 2.2rem; color: #fff; font-weight: 700; background: linear-gradient(90deg, #a25ffb 0%, #fff 100%); border-radius: 32px; padding: 10px 38px; box-shadow: 0 2px 16px 0 #a25ffb33; border: 2px solid #a25ffb; transition: box-shadow 0.2s; cursor: pointer;">Work Experience</span>
                                                     </div>
                                                                                       
+                                                <div id="workExpContent" style="display:none;">
                                                 <div style="position: relative; width: 100%; height: 3px; background: white; margin-bottom: 0;"></div>
                                                 <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; position: relative; z-index: 1; margin-top: 0; gap: 8px;">
                         <!-- Timeline item 1: HTML Developer -->
@@ -234,8 +235,9 @@
                                                 <div style="position: relative; width: 100%; height: 3px; background: white; margin: 48px 0 0 0;"></div>
                                                 <div style="text-align: left; margin: 48px 0 0 0;">
                                                     <span style="color: gray; font-size: 1.1rem; display: block;">My Projects</span>
-                                                    <span style="display: inline-block; margin-top: 12px; font-size: 2.2rem; color: #fff; font-weight: 700; background: linear-gradient(90deg, #a25ffb 0%, #fff 100%); border-radius: 32px; padding: 10px 38px; box-shadow: 0 2px 16px 0 #a25ffb33; border: 2px solid #a25ffb; transition: box-shadow 0.2s; cursor: pointer;">Projects</span>
+                                                    <span id="projectsBtn" style="display: inline-block; margin-top: 12px; font-size: 2.2rem; color: #fff; font-weight: 700; background: linear-gradient(90deg, #a25ffb 0%, #fff 100%); border-radius: 32px; padding: 10px 38px; box-shadow: 0 2px 16px 0 #a25ffb33; border: 2px solid #a25ffb; transition: box-shadow 0.2s; cursor: pointer;">Projects</span>
                                                 </div>
+                                                <div id="projectsContent" style="display:none;">
                                                 <div style="position: relative; width: 100%; height: 3px; background: white; margin-bottom: 0; margin-top: 32px;"></div>
                                                 <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%; position: relative; z-index: 1; margin-top: 0; gap: 8px;">
 
@@ -282,7 +284,38 @@
 </section>
 
 </main>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <script>
+                // Floating/typing effect for roles
+                var typed = new Typed('#typed-role', {
+                    strings: ['Web Developer', 'UI/UX Designer', 'Video Editor'],
+                    typeSpeed: 60,
+                    backSpeed: 40,
+                    backDelay: 1200,
+                    loop: true
+                });
+
+                // Toggle Work Experience and Projects
+                document.addEventListener('DOMContentLoaded', function() {
+                    const workExpBtn = document.getElementById('workExpBtn');
+                    const workExpContent = document.getElementById('workExpContent');
+                    const projectsBtn = document.getElementById('projectsBtn');
+                    const projectsContent = document.getElementById('projectsContent');
+
+                    workExpBtn.addEventListener('click', function() {
+                        workExpContent.style.display = 'block';
+                        projectsContent.style.display = 'none';
+                        workExpBtn.style.boxShadow = '0 4px 24px 0 #a25ffb55';
+                        projectsBtn.style.boxShadow = '0 2px 16px 0 #a25ffb33';
+                    });
+                    projectsBtn.addEventListener('click', function() {
+                        projectsContent.style.display = 'block';
+                        workExpContent.style.display = 'none';
+                        projectsBtn.style.boxShadow = '0 4px 24px 0 #a25ffb55';
+                        workExpBtn.style.boxShadow = '0 2px 16px 0 #a25ffb33';
+                    });
+                });
+                </script>
 
     <script>
     // Floating/typing effect for roles
