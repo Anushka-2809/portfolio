@@ -327,18 +327,22 @@
                     const projectsBtn = document.getElementById('projectsBtn');
                     const projectsContent = document.getElementById('projectsContent');
 
-                    workExpBtn.addEventListener('click', function() {
-                        workExpContent.style.display = 'block';
-                        projectsContent.style.display = 'none';
-                        workExpBtn.style.boxShadow = '0 4px 24px 0 #a25ffb55';
-                        projectsBtn.style.boxShadow = '0 2px 16px 0 #a25ffb33';
-                    });
-                    projectsBtn.addEventListener('click', function() {
-                        projectsContent.style.display = 'block';
-                        workExpContent.style.display = 'none';
-                        projectsBtn.style.boxShadow = '0 4px 24px 0 #a25ffb55';
-                        workExpBtn.style.boxShadow = '0 2px 16px 0 #a25ffb33';
-                    });
+                    if (workExpBtn && workExpContent && projectsBtn && projectsContent) {
+                        workExpBtn.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            workExpContent.style.display = 'block';
+                            projectsContent.style.display = 'none';
+                            workExpBtn.style.boxShadow = '0 4px 24px 0 #a25ffb55';
+                            projectsBtn.style.boxShadow = '0 2px 16px 0 #a25ffb33';
+                        });
+                        projectsBtn.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            projectsContent.style.display = 'block';
+                            workExpContent.style.display = 'none';
+                            projectsBtn.style.boxShadow = '0 4px 24px 0 #a25ffb55';
+                            workExpBtn.style.boxShadow = '0 2px 16px 0 #a25ffb33';
+                        });
+                    }
                 });
                 </script>
 
